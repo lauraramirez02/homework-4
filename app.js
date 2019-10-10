@@ -1,1 +1,1 @@
-document.body.innerText= "&#X1F388";
+document.body.innerText= String.fromCodePoint (0X1F388);

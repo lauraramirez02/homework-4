@@ -1,0 +1,1 @@
+document.body.innerText= "&#X1F388";

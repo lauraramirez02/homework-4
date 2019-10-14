@@ -1,5 +1,7 @@
 div#balloon{
     text-size-adjust: 30px;
     text-align: center;
+    line-height: 1.5;
+    display: inline-block;
     vertical-align: middle;
 }

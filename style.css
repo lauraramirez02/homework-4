@@ -5,4 +5,5 @@ div#balloon{
     left: 50%;
     -ms-transfrom: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    text-size-adjust: 30px;
 }

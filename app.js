@@ -11,7 +11,7 @@
 //}
 //});
 var init=16;
-document.addEventListener("keyup",arrow);
+window.addEventListener("keyup",arrow);
 
 function arrow(event) {
     event.preventDefault ();
@@ -23,14 +23,14 @@ function arrow(event) {
             if (init <=0) {
                 balloon.textContent="Done";
                 balloon.style.fontSize="60px";
-                document.removeEventListener('keyup',minus);
+                window.removeEventListener('keyup',minus);
             }
                 
             break;
             case 73:
             if (init >=60) {
                 balloon.textContent="💥";
-                document.removeEventListener('keyup',plus);
+                window.removeEventListener('keyup',plus);
             }
     
             else{

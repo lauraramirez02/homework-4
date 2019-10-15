@@ -11,7 +11,7 @@ function arrow(event) {
             if (init <=0) {
                 balloon.textContent="done";
                 balloon.style.fontSize="60px";
-                window.removeEventListener('keyup',minus);
+                window.removeEventListener('keyup',plus);
             }
             else{
                 init=init+2;

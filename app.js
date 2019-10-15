@@ -20,7 +20,7 @@ function balloon(event) {
 	// }
 	switch (event.keyCode) {
 		case 30:
-			changeSize('.balloon', 1.1, 'down');
+			changeSize('.balloon', 1.1, 'i');
 			break;
 		case 28:
 			changeSize('.balloon', 1.1);
@@ -31,10 +31,6 @@ function balloon(event) {
 
 	// Cancel the default action to avoid it being handled twice
 	// event.preventDefault();
-}
-
-function question() {
-  $( ".exercise" ).toggleClass( "active" );
 }
 
 // element = 'string'
@@ -49,7 +45,7 @@ function changeSize(element, amount, direction) {
 		elementSizeValue *= amount;
 	} else elementSizeValue /= amount;
 
-	if (elementSizeValue <= 250) {
+	if (elementSizeValue <= 60) {
 		console.log(elementSize);
 		elementSize = Math.ceil(elementSizeValue) + 'px';
 		element.style.fontSize = elementSize;

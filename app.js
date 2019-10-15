@@ -9,7 +9,7 @@ function arrow(event) {
             init=init-2;
             balloon.style.fontSize=init+"px";
             if (init <=0) {
-                balloon.textContent="Done";
+                balloon.textContent="done";
                 balloon.style.fontSize="60px";
                 window.removeEventListener('keyup',minus);
             }

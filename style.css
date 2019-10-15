@@ -1,10 +1,31 @@
-div#balloon{
-    width: 30px;
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transfrom: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-size-adjust: 30px;
+body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    
+  }
+  body > div {
+    max-width: 1000px;
+    padding-top: 50px;
+  }
+  .exercise {
+    text-align: left;
+    padding-top: 100px;
+    max-width: 500px;
+  }
+  h1 {
+    font-size: 50px;
+  }
+  
+  .balloon {
+    font-size: 50px;
+  }
+  .exercise {
+    display: none;
+  }
+  .active {
+      display: block;
+    animation-name: popOut;
+    animation-duration: 4s;
 }

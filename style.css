@@ -7,5 +7,5 @@ p#balloon {
     transform: translate(-50%,-50%);
 }
 .done {
-    font-size: 10px;
+    font-size: 5px;
 }

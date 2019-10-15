@@ -11,11 +11,11 @@ function arrow(event) {
             if (init <=0) {
                 balloon.textContent="done";
                 balloon.style.fontSize="60px";
-                window.removeEventListener('keyup',plus);
+                window.removeEventListener('keyup',minus);
             }
             else{
-                init=init+2;
-                balloon.style.fontSize=init+"px";
+                init=init-2;
+                balloon.style.fontSize=init-"px";
             }
             break;
             case 73:

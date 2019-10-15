@@ -6,12 +6,16 @@ function arrow(event) {
     var balloon = document.getElementById("balloon");
     switch (event.keyCode) {
         case 68:
-            init=init+2;
+            init=init-2;
             balloon.style.fontSize=init+"px";
             if (init <=0) {
                 balloon.textContent="done";
                 balloon.style.fontSize="60px";
                 window.removeEventListener('keyup',minus);
+            }
+            else{
+                init=init-2;
+                balloon.style.fontSize=init-"px";
             }
             break;
             case 73:

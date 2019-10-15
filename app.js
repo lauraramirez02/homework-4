@@ -1,5 +1,5 @@
 var init=16;
-window.addEventListener("keyup",arrow);
+document.addEventListener("keyup",arrow);
 
 function arrow(event) {
     event.preventDefault ();
@@ -11,22 +11,18 @@ function arrow(event) {
             if (init <=0) {
                 balloon.textContent="done";
                 balloon.style.fontSize="60px";
-                window.removeEventListener('keyup',minus);
-            }
-            else{
-                init=init+2;
-                balloon.style.fontSize=init-"px";
-            }
-            break;
+                document.removeEventListener('keyup',minus);
+            }break;
+            
             case 73:
             if (init >=60) {
                 balloon.textContent="💥";
-                window.removeEventListener('keyup',plus);
+                document.removeEventListener('keyup',plus);
             }
     
             else{
                 init=init+2;
-                balloon.style.fontSize=init-"px";
+                balloon.style.fontSize=init+"px";
             }break;
             }
             }

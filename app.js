@@ -12,9 +12,6 @@ function arrow(event) {
                 balloon.textContent="done";
                 balloon.style.fontSize="60px";
                 document.removeEventListener('keyup',minus);
-            }else{
-                init=init+2;
-                balloon.style.fontSize=init-"px";
             }break;
 
             
@@ -22,6 +19,12 @@ function arrow(event) {
             if (init >=60) {
                 balloon.textContent="💥";
                 document.removeEventListener('keyup',plus);
+            }
+    
+            else{
+                init=init+2;
+                balloon.style.fontSize=init+"px";
+                document.removeEventListener('keyup',plus)
             }break;
             }
             }

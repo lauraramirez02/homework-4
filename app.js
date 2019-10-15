@@ -14,7 +14,7 @@ function arrow(event) {
                 window.removeEventListener('keyup',minus);
             }
             else{
-                init=init-2;
+                init=init+2;
                 balloon.style.fontSize=init+"px";
             }
             break;

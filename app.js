@@ -13,6 +13,10 @@ function arrow(event) {
                 balloon.style.fontSize="60px";
                 window.removeEventListener('keyup',minus);
             }
+            else{
+                init=init+2;
+                balloon.style.fontSize=init-"px";
+            }
             break;
             case 73:
             if (init >=60) {

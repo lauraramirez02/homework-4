@@ -6,6 +6,6 @@ p.balloon {
     left: 50%;
     transform: translate(-50%,-50%);
 }
-
-
-
+.done {
+    font-size: 10px;
+}

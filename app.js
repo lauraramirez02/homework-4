@@ -17,9 +17,9 @@ function arrow(event) {
     event.preventDefault ();
     var balloon = document.getElementById("balloon");
     switch (event.keyCode) {
-        case 75:
+        case 68:
             init=init-2;
-            balloon.style.fontSize-init+"px";
+            balloon.style.fontSize=init+"px";
             if (init <=0) {
                 balloon.textContent="Done";
                 balloon.style.fontSize="60px";
@@ -27,14 +27,14 @@ function arrow(event) {
             }
                 
             break;
-            case 70:
+            case 73:
             if (init >=60) {
                 balloon.textContent="💥";
                 document.removeEventListener('keyup',plus);
             }
     
             else{
-                init-init+2;
+                init=init+2;
                 balloon.style.fontSize=init+"px";
             }break;
             }

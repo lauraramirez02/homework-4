@@ -19,10 +19,10 @@ function balloon(event) {
 	//   return; // Do nothing if the event was already processed
 	// }
 	switch (event.keyCode) {
-		case 30:
-			changeSize('.balloon', 1.1, 'i');
+		case 40:
+			changeSize('.balloon', 1.1, 'down');
 			break;
-		case 28:
+		case 38:
 			changeSize('.balloon', 1.1);
 			break;
 		default:
@@ -31,6 +31,10 @@ function balloon(event) {
 
 	// Cancel the default action to avoid it being handled twice
 	// event.preventDefault();
+}
+
+function question() {
+  $( ".exercise" ).toggleClass( "active" );
 }
 
 // element = 'string'
@@ -45,7 +49,7 @@ function changeSize(element, amount, direction) {
 		elementSizeValue *= amount;
 	} else elementSizeValue /= amount;
 
-	if (elementSizeValue <= 60) {
+	if (elementSizeValue <= 250) {
 		console.log(elementSize);
 		elementSize = Math.ceil(elementSizeValue) + 'px';
 		element.style.fontSize = elementSize;
@@ -58,4 +62,7 @@ function boom(element) {
 }
 
 document.addEventListener('keydown', balloon, true);
+
+button = document.querySelector('button.question');
+button.addEventListener('click', question, true);
 

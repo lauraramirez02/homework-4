@@ -11,12 +11,12 @@ function arrow(event) {
             balloon.style.fontSize=init+"px";
             if (init <=0) {
                 balloon.textContent="done";
-                balloon.style.fontSize="60px";
+                balloon.style.fontSize="30px";
                 document.removeEventListener('keyup',handler);
             }break;
               
             case 73:
-            if (init >60) {
+            if (init >=60) {
                 balloon.textContent="💥";
                 document.removeEventListener('keyup',handler);
             }

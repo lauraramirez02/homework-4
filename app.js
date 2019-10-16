@@ -1,4 +1,5 @@
 var init=30;
+var handler=event.keyCode;
 document.addEventListener('keyup',handler);
 
 //function arrow(event) {

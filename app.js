@@ -1,8 +1,8 @@
 var init=30;
-var handler=event.keyCode;
-document.addEventListener('keyup',handler);
 
-function handler(event) {
+document.addEventListener('keyup',arrow);
+
+function arrow(event) {
         event.preventDefault ();
     var balloon = document.getElementById("balloon");
     switch (event.keyCode) {

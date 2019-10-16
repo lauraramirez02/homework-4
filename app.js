@@ -22,7 +22,7 @@ function arrow(event) {
             }
     
             else{
-                init=init+10;
+                init=init-10;
                 balloon.style.fontSize=init+"px";
             }break;
             }

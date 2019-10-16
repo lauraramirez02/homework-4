@@ -1,8 +1,9 @@
 var init=30;
 document.addEventListener('keyup',handler);
 
-function arrow(event) {
-    event.preventDefault ();
+//function arrow(event) {
+    const handler= function (event) {
+        event.preventDefault ();
     var balloon = document.getElementById("balloon");
     switch (event.keyCode) {
         case 68:
@@ -25,7 +26,10 @@ function arrow(event) {
                 balloon.style.fontSize=init+"px";
             }break;
             }
-            }
+
+    }
+    
+            
     
 
 

@@ -1,5 +1,5 @@
 var init=30;
-
+var arrow= event.arrow
 document.addEventListener('keyup',arrow);
 
 function arrow(event) {
@@ -12,13 +12,13 @@ function arrow(event) {
             if (init <=0) {
                 balloon.textContent="done";
                 balloon.style.fontSize="30px";
-                document.removeEventListener('keyup',handler);
+                document.removeEventListener('keyup',arrow);
             }break;
               
             case 73:
             if (init >=60) {
                 balloon.textContent="💥";
-                document.removeEventListener('keyup',handler);
+                document.removeEventListener('keyup',arrow);
             }
     
             else{

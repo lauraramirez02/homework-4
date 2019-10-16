@@ -1,9 +1,9 @@
-const init=30;
+var init=30;
 document.addEventListener("keyup",arrow);
 
 function arrow(event) {
     event.preventDefault ();
-    const balloon = document.getElementById("balloon");
+    var balloon = document.getElementById("balloon");
     switch (event.keyCode) {
         case 68:
             init=init-2;
@@ -15,7 +15,7 @@ function arrow(event) {
             }break;
               
             case 73:
-            if (init >=60) {
+            if (init >60) {
                 balloon.textContent="💥";
                 document.removeEventListener('keyup',plus);
             }

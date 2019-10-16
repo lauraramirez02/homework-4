@@ -1,9 +1,9 @@
-var init=30;
+const init=30;
 document.addEventListener("keyup",arrow);
 
 function arrow(event) {
     event.preventDefault ();
-    var balloon = document.getElementById("balloon");
+    const balloon = document.getElementById("balloon");
     switch (event.keyCode) {
         case 68:
             init=init-2;

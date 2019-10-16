@@ -1,5 +1,5 @@
 var init=30;
-var arrow= onkeydown
+var arrow= onkeyup
 window.addEventListener('keyup',arrow);
 
 function arrow(event) {

@@ -1,4 +1,8 @@
-p {
-    font-size: 30px;
-    padding: 50%
+p#balloon {
+    text-size-adjust: 30px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }

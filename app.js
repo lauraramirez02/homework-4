@@ -12,13 +12,13 @@ function arrow(event) {
             if (init <=0) {
                 balloon.textContent="done";
                 balloon.style.fontSize="30px";
-                window.removeEventListener('keyup',arrow);
+                window.removeEventListener('keyup',minus);
             }break;
               
             case 73:
             if (init >=60) {
                 balloon.textContent="💥";
-                window.removeEventListener('keyup',arrow);
+                window.removeEventListener('keyup',plus);
             }
     
             else{

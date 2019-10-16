@@ -1,4 +1,4 @@
-var init=16;
+var init=30;
 document.addEventListener("keyup",arrow);
 
 function arrow(event) {

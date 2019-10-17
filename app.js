@@ -1,5 +1,5 @@
 var init=30;
-var arrow= plus,minus
+var arrow= (minus,plus)
 window.addEventListener('keyup',arrow);
 
 function arrow(event) {

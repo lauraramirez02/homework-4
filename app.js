@@ -1,9 +1,8 @@
 var init=30;
-var keyup= ('plus','minus');
-var arrow= ('minus','plus');
-window.addEventListener('keyup',arrow);
 
-function arrow(event) {
+document.addEventListener('keyup',balloonHandler);
+
+function balloonHandler(event) {
         event.preventDefault ();
     var balloon = document.getElementById("balloon");
     switch (event.keyCode) {
@@ -13,13 +12,13 @@ function arrow(event) {
             if (init <=0) {
                 balloon.textContent="done";
                 balloon.style.fontSize="30px";
-                window.removeEventListener('keyup',minus);
+                window.removeEventListener('keyup',balloonHandler);
             }break;
               
             case 73:
             if (init >=60) {
                 balloon.textContent="💥";
-                window.removeEventListener('keyup',plus);
+                window.removeEventListener('keyup',balloonHandler);
             }
     
             else{
